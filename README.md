@@ -1,3 +1,3 @@
 # cs50project2-chatappication
-- Install venv, flask, flask_session, flask_socketio.
-Welcome, 
+>Install venv, flask, flask_session, flask_socketio.
+-Welcome, 
