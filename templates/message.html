@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block head %}
+    <title>Send Messages</title>
+{% endblock %}
+{% block body %}
+
+    <div style="text-align:right;font-size: 1.2em;font-weight: bolder;"><a href="{{ url_for('logout')}}">LOGOUT</a></div>
+    <ul id="message_dict">
+        <!-- {% for i in message_list %}
+        <li>
+            <div>USERNAME: {{i["username"]}}</div>
+            <div class="msg-data">{{i["selection"]}}</div>
+            <div>{{i["time"]}}</div>
+        </li>
+        {% endfor %} -->
+    </ul>
+    <br><br>
+    <form id="message_form" action='javascript:void(0)' method="post">
+        <input type="text" name="messages" id="messages" size="40">
+        <input type="submit" class="btn send" value="Send" id="send">
+    </form>
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+{% endblock %}

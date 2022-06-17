@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(247, 160, 247);
+}
+.heading{
+    text-align: center;font-size:1.5em;
+    border: 1px solid purple;
+    margin-bottom: 8%;
+}
+#room_form{
+    display: flex;
+    justify-content: center;
+}
+.message_f{
+    color:white;background-color: red;font-size: 1em;
+    margin:5px;
+}
+.btn{
+    color:white;padding:5px;
+    background-color: purple;
+    font-size: 1em;border: none;
+}
+input{
+    font-size: 1em;outline:none;
+}
+#message_form{
+    position:fixed;bottom:2px;left:15%;
+    background-color:darkmagenta;
+    display: flex;flex-direction: row;
+}
+#messages{
+    font-size:1em;
+}
+.msg-data{
+    font-size: 1.1em;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;background-color: rgb(115, 53, 167);word-break: break-all;padding-left:5px;
+}
+.sm{
+    font-size: 0.8em;
+}
+ul{
+    transform: rotate(180deg);
+}
+ul li{
+    margin-bottom: 20px;background-color: rgba(151, 79, 219, 0.89);padding:4px;
+    transform: rotate(-180deg);
+}
+.send{
+    font-size:1em;
+    color:white;
+    background-color: rgb(69, 41, 97);
+    cursor: pointer;
+}
+.send:hover{
+    background-color: blueviolet;
+}
+#message_dict{
+    font-size: 1em;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
